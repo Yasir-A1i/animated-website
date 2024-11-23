@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+:root{
+    --color: #baff5b
+}
+
+nav{
+    width: 100vw;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    column-gap: 40px;
+    font-size: 0.7rem;
+    font-weight: 400;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    height: 110px;
+}
+.menu *{
+    cursor: pointer;
+}
+.menu button{
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border-width: 3px;
+}
+.nav-button:hover{
+    background-color: var(--color);
+}

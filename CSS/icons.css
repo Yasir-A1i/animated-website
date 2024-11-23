@@ -1,0 +1,13 @@
+.lineicons--ethereum-logo {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M6.093 12.185L11.998 2l5.907 10.185l-5.907 3.63z'/%3E%3Cpath fill='%23000' d='M6.093 13.35L11.998 22l5.91-8.65l-5.91 3.627z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
