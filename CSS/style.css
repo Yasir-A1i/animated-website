@@ -11,9 +11,17 @@
 nav{
     width: 100vw;
     height: auto;
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+}
+.mingcute--menu-fill{
+    display: none;
 }
 .logo{
     display: flex;
@@ -32,6 +40,7 @@ nav{
 }
 .menu *{
     cursor: pointer;
+    position: relative;
 }
 .menu button{
     font-weight: 600;
@@ -40,6 +49,37 @@ nav{
     background-color: white;
     border-width: 3px;
 }
-.nav-button:hover{
-    background-color: var(--color);
+.sidemenu{
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: 400;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 70vw;
+    padding: 30px;
+    row-gap: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    display: none;
+    transform: translateX(70vw);
 }
+.sidemenu *{
+    cursor: pointer;
+    position: relative;
+}
+.sidemenu button{
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border-width: 3px;
+}
+
+.maki--cross{
+    align-self: flex-end;
+}
+
