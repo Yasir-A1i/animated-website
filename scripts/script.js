@@ -9,6 +9,12 @@ tl.from('.logo',{
     opacity:0,
     duration:0.5
 });
+tl.from('.menu *',{
+    y:-100,
+    opacity:0,
+    duration:0.5,
+    stagger:0.2
+})
 let sideAnimate = gsap.to('.sidemenu', {
     x: 0,
     duration: 0.7,
