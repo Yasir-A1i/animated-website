@@ -70,3 +70,15 @@ window.addEventListener('scroll', () => {
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
 });
 
+tl.from('.header-text',{
+    x:-200,
+    duration:0.7,
+    opacity:0
+})
+tl.from('.header-image',
+    {
+        x:200,
+        durstion:0.4,
+        opacity:0
+    }
+)
