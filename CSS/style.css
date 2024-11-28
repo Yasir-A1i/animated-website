@@ -18,6 +18,7 @@ nav{
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     align-items: center;
@@ -55,6 +56,7 @@ nav{
 }
 .sidemenu{
     display: flex;
+    z-index: 1;
     font-size: 0.7rem;
     font-weight: 400;
     flex-direction: column;
@@ -69,7 +71,7 @@ nav{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* For Safari */
     display: none;
-    transform: translateX(70vw);
+    transform: translateX(100vw);
 }
 .sidemenu *{
     cursor: pointer;
@@ -96,6 +98,7 @@ header{
     margin-top: 100px;
     height: auto;
     display: flex;
+    position: relative;
 }
 .header-text{
     width: 35%;
@@ -134,5 +137,10 @@ header{
 .header-image img{
     width: 70%;
     align-self: flex-end;
+}
+
+.button-container-consult{
+    width: auto;
+    height: auto;
 }
 

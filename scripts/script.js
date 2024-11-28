@@ -34,12 +34,16 @@ let staggeranimate = gsap.from('.sidemenu *', {
 menuIcon.addEventListener('click', () => {
     sideAnimate.play(); //! Play the sidemenu animation when the menu icon is clicked
     staggeranimate.play(); //! Start the side menu item animation as well
+    const header = document.querySelector('header'); // Select the header element
+    header.style.zIndex = '-1'; // Set the z-index to -1
 });
 
 //! Adding event listener for the close icon to reverse the animation
 closeIcon.addEventListener('click', () => {
     sideAnimate.reverse(); //! Reverse the sidemenu animation when the close icon is clicked
     staggeranimate.reverse(); //! Reverse the side menu item animation
+    const header = document.querySelector('header'); // Select the header element
+    header.style.zIndex = '0'; // Set the z-index to -1
 });
 
 //! Animation for navbar
@@ -69,10 +73,19 @@ window.addEventListener('scroll', () => {
     // Update the last scroll position to the current position
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
 });
-
-tl.from('.header-text',{
+tl.from('.header-text h1',{
     x:-200,
-    duration:0.7,
+    opacity:0,
+    duration:0.3
+})
+tl.from('.header-text p',{
+    x:-200,
+    opacity:0,
+    duration:0.3
+})
+tl.from('.button-container-consult',{
+    x:-200,
+    duration:0.3,
     opacity:0
 })
 tl.from('.header-image',
