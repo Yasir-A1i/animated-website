@@ -91,7 +91,7 @@ tl.from('.button-container-consult',{
 tl.from('.header-image',
     {
         x:200,
-        durstion:0.4,
+        duration:0.7,
         opacity:0
     }
 )
