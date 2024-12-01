@@ -95,3 +95,25 @@ tl.from('.header-image',
         opacity:0
     }
 )
+
+//! Animation of scrolll trigger for services text
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.fromTo(".js-services-text", 
+  {
+    x: -500,        // Initial position (from left)
+    opacity: 0,      // Initial opacity
+  },
+  {
+    x: 0,            // Final position (to the default)
+    opacity: 1,      // Final opacity
+    scrollTrigger: {
+      trigger: ".js-services-text",  // Element to trigger the animation
+      start: "top 80%",  // When the top of the element reaches 80% of the viewport height
+      end: "top 30%",    // Animation ends when the top of the element reaches 30% of the viewport height
+      scrub: true,       // Smooth animation with scroll
+      markers: false,    // Show markers for debugging (optional)
+      reverse: true      // Reverse the animation when scrolling up
+    }
+  });
