@@ -270,3 +270,46 @@ main{
 .services-text p{
     font-weight: 600;
 }
+
+
+/*! Styling for Services Boxes */
+
+.services{
+    width: 90%;
+    height: auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service{
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    padding: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+.part1{
+    width: 50%;
+    height: 100%;
+    background-color: wheat;
+    position: relative;
+    z-index: 0;
+}
+.part2{
+    width: 50%;
+    height: 100%;
+}
+.foranimation{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
