@@ -54,3 +54,20 @@
     top: 5px;
     left: 5px;
 }
+
+@keyframes scrollleft {
+    to{
+        left: -200px;
+    }
+}
+@keyframes scrollright {
+    to{
+        right: -200px;
+    }
+}
+.company img:hover{
+    filter: grayscale(0%);
+}
+.companyr img:hover{
+    filter: grayscale(0%);
+}

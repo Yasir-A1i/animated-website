@@ -150,3 +150,100 @@ header{
     height: auto;
 }
 
+/*! Starting of Main Styles */
+
+main{
+    width: 100vw;
+    height: auto;
+}
+
+.company{
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollleft;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.companyr{
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    right: max(calc(200px * 8), 100%);
+    animation-name: scrollright;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.wrapper{
+    position: relative;
+    /* width: 90%;
+    max-width: 90%; */
+    height: 120px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, 
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%, 
+    rgba(0, 0, 0, 1) 80%, 
+    rgba(0, 0, 0, 0)
+);
+}
+
+.company img{
+    width: 100%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.companyr img{
+    width: 100%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.company1{
+    animation-delay: calc((20s / 6) * (6 - 1) * -1);
+}
+.company2{
+    animation-delay: calc((20s / 6) *(6 - 2)* -1);
+}
+.company3{
+    animation-delay: calc((20s / 6) *(6 - 3)* -1);
+}
+.company4{
+    animation-delay: calc((20s / 6) *(6 - 4)* -1);
+}
+.company5{
+    animation-delay: calc((20s / 6) *(6 - 5)* -1);
+}
+.company6{
+    animation-delay: calc((20s / 6) *(6 - 6)* -1);
+}
+.company-1{
+    animation-delay: calc((20s / 6) * (6 - 1) * -1);
+}
+.company-2{
+    animation-delay: calc((20s / 6) *(6 - 2)* -1);
+}
+.company-3{
+    animation-delay: calc((20s / 6) *(6 - 3)* -1);
+}
+.company-4{
+    animation-delay: calc((20s / 6) *(6 - 4)* -1);
+}
+.company-5{
+    animation-delay: calc((20s / 6) *(6 - 5)* -1);
+}
+.company-6{
+    animation-delay: calc((20s / 6) *(6 - 6)* -1);
+}
+.trusted-companies{
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 20px;   
+}
