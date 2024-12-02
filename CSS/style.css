@@ -18,7 +18,7 @@ nav{
     display: flex;
     justify-content: space-between;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     align-items: center;
@@ -318,6 +318,7 @@ main{
     top: 0;
     left: 0;
     border-radius: 20px;
+    z-index: 0;
 }
 .part1 div span{
     font-size: 1.2rem;
@@ -338,7 +339,27 @@ main{
     font-size: 1.2rem;
 }
 .part1 .icon-part span{
-    background-color: transparent;
+    background-color: black;
+    color: var(--color);
+    margin-right: 5px;
+    border-radius: 50%;
     font-size: 40px;
     transform: rotate(-45deg);
+}
+
+.email-marketing-box{
+    display: flex;
+    flex-direction: column;
+}
+.pay .foranimation, .social .foranimation{
+    background-color: rgb(18, 18, 18);
+}
+.pay .part1 div span, .social .part1 div span{ 
+    background-color: white;
+}
+.pay .learn, .social .learn{
+    color: white;
+}
+.pay .part1 .icon-part span, .social .part1 .icon-part span{
+    color: black;
 }
