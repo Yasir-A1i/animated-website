@@ -117,3 +117,62 @@ gsap.fromTo(".js-services-text",
       reverse: true      // Reverse the animation when scrolling up
     }
   });
+
+
+// Ensure GSAP and ScrollTrigger are loaded
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".seo", {
+  x: -500,               // Start from the left
+  opacity: 0,            // Start with opacity 0
+  duration: 1,           // Animation duration
+  scrollTrigger: {
+    trigger: ".seo",     // Element to trigger the animation
+    start: "top 80%",     // Start animation when the top of the element is 80% of the viewport height
+    end: "top 30%",       // End animation when the top of the element reaches 30% of the viewport height
+    scrub: true,          // Scrub the animation to scroll position (smooth scrolling)
+    markers: false,       // Set to true for debugging
+    reverse: true         // Reverse animation when scrolling up
+  }
+});
+gsap.from(".social", {
+    scrollTrigger: {
+      trigger: ".social",         // The element that triggers the animation
+      start: "top 80%",            // Animation starts when .social reaches 80% of the viewport
+      end: "bottom 70%",           // Animation ends when .social is at 20% from the bottom of the viewport
+      scrub: true,                 // This allows the animation to be linked to the scroll
+      reverse: true,               // Reverses the animation on scroll up
+    },
+    x: -500,                      // Starts from x: -500
+    opacity: 0,                    // Starts with opacity 0
+    duration: 1,                   // Duration of the animation when scrolled fully
+  });
+  gsap.fromTo(".pay", 
+    {
+      x: 500,    // Start from 500px to the right
+      opacity: 0 // Start with 0 opacity
+    }, 
+    {
+      x: 0,       // Animate to the default position
+      opacity: 1,  // Fade in to full opacity
+      scrollTrigger: {
+        trigger: ".pay",    // Trigger animation when the '.pay' div is in view
+        start: "top 80%",    // Start the animation when 80% of the '.pay' div is in the viewport
+        end: "top 30%",      // End the animation when 30% of the '.pay' div is in the viewport
+        scrub: true,         // Smoothly reverse the animation while scrolling
+        markers: false        // Optional: Show markers to debug scroll trigger position
+      }
+    }
+  );
+  gsap.from(".email", {
+    scrollTrigger: {
+      trigger: ".social",         // The element that triggers the animation
+      start: "top 50%",            // Animation starts when .social reaches 80% of the viewport
+      end: "bottom 70%",           // Animation ends when .social is at 20% from the bottom of the viewport
+      scrub: true,                 // This allows the animation to be linked to the scroll
+      reverse: true,               // Reverses the animation on scroll up
+    },
+    x: 500,                      // Starts from x: -500
+    opacity: 0,                    // Starts with opacity 0
+    duration: 1,                   // Duration of the animation when scrolled fully
+  });

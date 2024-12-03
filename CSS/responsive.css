@@ -124,3 +124,22 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width:600px) {
+    .service{
+        width: 400px;
+        height: 250px;
+    }
+    .service .part1 div span{
+        font-size: 1.1rem;
+    }
+    .service .part2 img{
+        width: 100%;
+    }
+    .service .part1 .learn{
+        font-weight: 400;
+    }
+    .services-text{
+        margin-left: 0;
+    }
+}

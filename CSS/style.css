@@ -154,7 +154,7 @@ header{
 
 main{
     width: 100vw;
-    height: 2000px;
+    height: 3000px;
 }
 
 .company{
@@ -362,4 +362,9 @@ main{
 }
 .pay .part1 .icon-part span, .social .part1 .icon-part span{
     color: black;
+}
+.services-flex{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
